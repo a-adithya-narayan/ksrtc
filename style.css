@@ -11,22 +11,3 @@ header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0
 footer{background:#062f22;color:#e4f2e9;padding:28px 22px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-inner a{color:var(--gold)}
 @media(max-width:850px){.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.grid,.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{max-width:600px}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:14px}}
 @media(max-width:560px){.grid,.resource-grid,.media-grid{grid-template-columns:1fr}.hero-inner{padding-top:48px}.hero-art img{height:220px}.wrap{padding-top:48px;padding-bottom:48px}.section-head{align-items:flex-start;flex-direction:column}.numbers{grid-template-columns:1fr}.topbar{font-size:.8rem}}
-
-/* Modern card interactions and refined colour palette */
-:root{--green:#08784e;--deep:#063b2b;--gold:#ffd166;--ink:#14251d;--muted:#5f7068;--paper:#f3f7f4;--accent:#e4f4eb}
-.bus-card,.resource,.contact-card,.media-card,.panel{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;box-shadow:0 8px 24px rgba(6,59,43,.08);border:1px solid rgba(8,120,78,.12)}
-.bus-card:hover,.resource:hover,.contact-card:hover,.media-card:hover,.panel:hover{transform:translateY(-7px);box-shadow:0 18px 38px rgba(6,59,43,.16);border-color:rgba(8,120,78,.32)}
-.bus-card img{transition:transform .45s ease}
-.bus-card:hover img{transform:scale(1.035)}
-.bus-card{isolation:isolate}
-.bus-card .body{background:linear-gradient(180deg,#fff 0%,#fbfefc 100%)}
-.resource .symbol{display:inline-grid;place-items:center;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#e2f5e9,#fff3ce);color:var(--deep)}
-.link-item,.number{transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
-.link-item:hover{transform:translateX(4px);background:#e7f5ec;box-shadow:0 6px 16px rgba(6,59,43,.08)}
-.number:hover{background:#e0f2e6;transform:translateY(-2px)}
-.btn{transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.18)}
-.btn.primary:hover{background:#ffe08a}
-.navlinks a{transition:color .2s ease}
-.hero-art{box-shadow:0 24px 60px rgba(0,0,0,.16)}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
