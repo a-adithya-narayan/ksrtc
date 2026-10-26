@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSRTC | Kerala State Road Transport</title>
+<style>
+:root{--green:#086b45;--deep:#06432f;--gold:#f6c453;--ink:#17251f;--muted:#64736c;--paper:#f5f8f5;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{color:inherit}.topbar{background:var(--deep);color:#fff;padding:9px 6%;font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px #0b392012}.nav{max-width:1200px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;font-weight:800;color:var(--deep);font-size:1.08rem}.brand img{width:56px;height:56px;object-fit:contain}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}.navlinks a:hover{color:var(--green)}
+.hero{background:linear-gradient(115deg,#063d2b 0%,#08754b 70%,#11935c 100%);color:white;overflow:hidden}.hero-inner{max-width:1200px;margin:auto;padding:76px 22px 72px;display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:1.05;margin:12px 0 18px;letter-spacing:-.04em}.hero p{font-size:1.1rem;max-width:560px;color:#e4f3eb}.hero-art{background:#ffffff12;border:1px solid #ffffff30;border-radius:26px;padding:16px;transform:rotate(1deg)}.hero-art img{width:100%;height:310px;object-fit:contain;border-radius:16px;background:#fff}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:800;text-decoration:none}.btn.primary{background:var(--gold);color:#173424}.btn.secondary{border:1px solid #ffffff80;color:white}
+.wrap{max-width:1200px;margin:auto;padding:66px 22px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:28px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;margin:8px 0}.section-head p{color:var(--muted);margin:0;max-width:530px}.kicker{color:var(--green);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.bus-card,.resource,.contact-card{background:white;border:1px solid #e5ece7;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px #143c2510}.bus-card img{width:100%;height:210px;object-fit:cover;background:#eaf0eb}.bus-card .body{padding:17px 18px}.bus-card h3{margin:0 0 5px;font-size:1.15rem}.bus-card p{margin:0;color:var(--muted);font-size:.92rem}.about{background:#e9f2ec}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.panel{padding:28px;border-radius:20px;background:white;border:1px solid #dce9df}.panel h3{margin-top:0}.panel p{color:var(--muted)}.link-list{display:grid;gap:12px}.link-item{display:flex;justify-content:space-between;gap:15px;align-items:center;text-decoration:none;background:#f5f8f5;padding:14px 16px;border-radius:12px;font-weight:700}.link-item span:last-child{color:var(--green);font-size:1.2rem}
+.resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.resource{padding:22px}.resource h3{margin:8px 0}.resource p{color:var(--muted);font-size:.92rem}.resource a{color:var(--green);font-weight:800;text-decoration:none;overflow-wrap:anywhere}.resource .symbol{font-size:1.6rem}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card{padding:26px}.contact-card h3{margin:0 0 10px}.address{font-size:1.08rem;font-weight:700}.numbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}.number{background:#f0f6f1;padding:11px;border-radius:10px;font-weight:700}
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.media-card{background:#fff;padding:18px;border-radius:18px;border:1px solid #e5ece7}.media-card video,.media-card audio{width:100%;margin-top:10px}.media-card h3{margin:0}
+footer{background:#062f22;color:#e4f2e9;padding:28px 22px}.footer-inner{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-inner a{color:var(--gold)}
+@media(max-width:850px){.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.grid,.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{max-width:600px}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:14px}}
+@media(max-width:560px){.grid,.resource-grid,.media-grid{grid-template-columns:1fr}.hero-inner{padding-top:48px}.hero-art img{height:220px}.wrap{padding-top:48px;padding-bottom:48px}.section-head{align-items:flex-start;flex-direction:column}.numbers{grid-template-columns:1fr}.topbar{font-size:.8rem}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>Kerala • India</span><span>Office of Managing Director · Transport Bhavan, Fort, Trivandrum</span></div>
+<header><nav class="nav">
+<a class="brand" href="#home"><img src="logo/LOGO.png" alt="KSRTC logo"><span>KSRTC<br><small>Kerala State Road Transport</small></span></a>
+<div class="navlinks"><a href="#home">Home</a><a href="#buses">Bus Gallery</a><a href="#about">About</a><a href="#resources">Resources</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div><div class="eyebrow">Kerala State Road Transport</div><h1>Explore the KSRTC collection.</h1><p>A simple KSRTC webpage built from the pictures, documents, media, website links and contact details already stored in this repository.</p><div class="actions"><a class="btn primary" href="#buses">View bus gallery</a><a class="btn secondary" href="#contact">Contact details</a></div></div>
+<div class="hero-art"><img src="bus%20pictures/SWIFT.jpeg" alt="KSRTC Swift bus from repository"></div>
+</div></section>
+<section class="wrap" id="buses"><div class="section-head"><div><div class="kicker">Repository images</div><h2>Bus gallery</h2></div><p>Each image below uses a bus picture file from the KSRTC repository.</p></div>
+<div class="grid">
+<article class="bus-card"><img src="bus%20pictures/ORDINARY.jpeg" alt="Ordinary bus"><div class="body"><h3>Ordinary</h3><p>Image: ORDINARY.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/FAST.jpeg" alt="Fast bus"><div class="body"><h3>Fast</h3><p>Image: FAST.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SUPERFAST.jpeg" alt="Superfast bus"><div class="body"><h3>Superfast</h3><p>Image: SUPERFAST.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SUPER%20EXPRESS.jpeg" alt="Super Express bus"><div class="body"><h3>Super Express</h3><p>Image: SUPER EXPRESS.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/DELUX.jpeg" alt="Delux bus"><div class="body"><h3>Delux</h3><p>Image: DELUX.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SUPERFAST%20DELUX.jpeg" alt="Superfast Delux bus"><div class="body"><h3>Superfast Delux</h3><p>Image: SUPERFAST DELUX.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SUPERFAST%20PREMIUM%20AC.jpeg" alt="Superfast Premium AC bus"><div class="body"><h3>Superfast Premium AC</h3><p>Image: SUPERFAST PREMIUM AC.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SLEEPER.jpeg" alt="Sleeper bus"><div class="body"><h3>Sleeper</h3><p>Image: SLEEPER.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/VENAD.jpeg" alt="Venad bus"><div class="body"><h3>Venad</h3><p>Image: VENAD.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SWIFT.jpeg" alt="Swift bus"><div class="body"><h3>Swift</h3><p>Image: SWIFT.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SWIFT%20DELUX.jpeg" alt="Swift Delux bus"><div class="body"><h3>Swift Delux</h3><p>Image: SWIFT DELUX.jpeg</p></div></article>
+<article class="bus-card"><img src="bus%20pictures/SWIFT%20DELEX.jpeg" alt="Swift Delex bus"><div class="body"><h3>Swift Delex</h3><p>Image: SWIFT DELEX.jpeg</p></div></article>
+</div></section>
+<section class="about" id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">About KSRTC</div><h2>Documents in this repository</h2></div><p>The original history document is linked directly; no additional history text has been invented for this page.</p></div>
+<div class="about-grid"><div class="panel"><h3>History document</h3><p>Open the English history document stored in the <strong>about ksrtc</strong> folder.</p><a class="btn primary" href="about%20ksrtc/history-english.odt">Open history-english.odt</a></div>
+<div class="panel"><h3>KSRTC websites</h3><div class="link-list"><a class="link-item" href="https://www.keralartc.com/" target="_blank" rel="noopener"><span>keralartc.com</span><span>↗</span></a><a class="link-item" href="https://onlineksrtcswift.com/" target="_blank" rel="noopener"><span>onlineksrtcswift.com</span><span>↗</span></a><a class="link-item" href="https://ksrtcswift.kerala.gov.in/" target="_blank" rel="noopener"><span>ksrtcswift.kerala.gov.in</span><span>↗</span></a></div></div></div>
+</div></section>
+<section class="wrap" id="resources"><div class="section-head"><div><div class="kicker">Files & media</div><h2>Repository resources</h2></div><p>Open the PDF and ODT files or play the audio and videos that are included in the repository.</p></div>
+<div class="resource-grid">
+<article class="resource"><div class="symbol">📄</div><h3>KSRTC duties</h3><p>PDF document from the circular folder.</p><a href="circular/KSRTCduties.pdf">Open KSRTCduties.pdf ↗</a></article>
+<article class="resource"><div class="symbol">📄</div><h3>Driver seniority list</h3><p>PDF document from the circular folder.</p><a href="circular/Seniority_list_Drivers.pdf">Open Seniority_list_Drivers.pdf ↗</a></article>
+<article class="resource"><div class="symbol">📄</div><h3>Promotion seniority list</h3><p>PDF document from the circular folder.</p><a href="circular/Promotion_seniority%20list%20draft.pdf">Open promotion seniority list ↗</a></article>
+<article class="resource"><div class="symbol">📄</div><h3>Fair document</h3><p>ODT document stored in the repository root.</p><a href="fair.odt">Open fair.odt ↗</a></article>
+<article class="resource"><div class="symbol">🎬</div><h3>KSRTC Hyderabad journey</h3><p>Video file from the repository.</p><a href="video/ഹൈദരാബാദ്-യാത്ര-കെഎസ്ആർടിസി.mp4">Open video ↗</a></article>
+<article class="resource"><div class="symbol">🎞️</div><h3>ആനവണ്ടിയും ലാലേട്ടനും</h3><p>Video and audio files from the repository.</p><a href="video/ആനവണ്ടിയും-ലാലേട്ടനും.mp4">Open video ↗</a></article>
+</div>
+<div class="media-grid" style="margin-top:22px"><div class="media-card"><h3>ആനവണ്ടിയും ലാലേട്ടനും — video</h3><video controls preload="metadata"><source src="video/ആനവണ്ടിയും-ലാലേട്ടനും.mp4" type="video/mp4">Your browser does not support video playback.</video></div><div class="media-card"><h3>ആനവണ്ടിയും ലാലേട്ടനും — audio</h3><audio controls preload="metadata"><source src="audio/ആനവണ്ടിയും ലാലേട്ടനും..mp3" type="audio/mpeg">Your browser does not support audio playback.</audio></div></div>
+</section>
+<section class="about" id="contact"><div class="wrap"><div class="section-head"><div><div class="kicker">Contact</div><h2>Office contact details</h2></div><p>Contact information is taken from the repository's CONTACT file.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>Office of Managing Director</h3><div class="address">TRANSPORT BHAVAN<br>Fort, Trivandrum<br>Kerala, India<br>Pin: 695023</div></div><div class="contact-card"><h3>Phone numbers</h3><div class="numbers"><div class="number">0471-2463799</div><div class="number">0471-2471011 ext 238</div><div class="number">9447071021</div><div class="number">0471-2462679</div><div class="number">0471-2471014</div><div class="number">0471-2471016</div><div class="number">0471-2471114</div><div class="number">0471-2471108</div></div></div></div>
+</div></section>
+</main>
+<footer><div class="footer-inner"><span>KSRTC — webpage made using files in this repository.</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
